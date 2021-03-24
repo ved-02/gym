@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>VED'S GYM</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(/crossfit-534615_1920.jpg);
+            
+        }
+
+        .right {
+            text-align: right;
+            display: inline-block;
+            position: fixed;
+            right: 34px;
+            top: 0px;
+        }
+
+        .name {
+            display: block;
+            margin: auto;
+            margin-top: 0px;
+            width: 124px;
+            font-size: 33px;
+            font-family: 'Londrina Solid', cursive;
+        }
+
+        .logo {
+            display: block;
+            margin: auto;
+            margin-top: 0px;
+            width: 176px;
+        }
+
+        .middle {
+            display: block;
+            width: 418px;
+            border-radius: 30px;
+            background-color: #433e3e;
+            margin: auto;
+            top: 0px;
+        }
+
+        .nav {
+            display: inline-block;
+        }
+
+        .nav li {
+            display: inline-block;
+            list-style: none;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 14px;
+            color: whitesmoke;
+
+        }
+
+        .nav li a:hover,
+        .nav li a.active {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 14px;
+            color: #a7a1a1;
+
+        }
+
+        .contain {
+            display: inline-block;
+            position: absolute;
+            /* width: 623px; */
+            right: 258px;
+            top: 177px;
+            color: whitesmoke;
+            background-color: #433e3e;
+            padding: 9px;
+            border-radius: 16px;
+        }
+
+        .contain h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 35px;
+        }
+
+        .join {
+            display: inline-block;
+            position: absolute;
+            /* width: 623px; */
+            right: 258px;
+            top: 304px;
+            color: whitesmoke;
+            background-color: #433e3e;
+            padding: 9px;
+            border-radius: 16px;
+        }
+
+        .join a, .submit {
+            font-family: 'Anton', sans-serif;
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .join a:hover, .submit:hover {
+            font-family: 'Anton', sans-serif;
+            color: #a7a1a1;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .form {
+            display: flex;
+            position: absolute;
+            /* width: 623px; */
+            left: 139px;
+            top: 115px;
+            color: whitesmoke;
+            background-color: #433e3e;
+            padding: 16px;
+            border-radius: 16px;
+            flex-direction: column;
+            /* font-family: 'Anton', sans-serif; */
+            font-size: 21px;
+        }
+        .formgroup input{
+            /* width:40px; */
+            font-size: 15px;
+            height: 21px;
+            text-align: center;
+            margin: 5px;
+        }
+        .submit{
+            display: inline-block;
+            position: absolute;
+            /* width: 623px; */
+            right: -184px;
+            top: 108px;
+            color: whitesmoke;
+            background-color: #433e3e;
+            padding: 9px;
+            border-radius: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+
+        <!-- for logo -->
+        <div class="right">
+            <img src="/weight-1399281_1280.png" alt="" class="logo">
+            <br>
+            <p class="name">VED'S GYM</p>
+        </div>
+
+
+        <!-- for navigation -->
+        <div class="middle">
+            <ul class="nav">
+                <li><a href="/gym.html" class="active">HOME</a></li>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contain">
+        <h1>COMPLETE YOUR 2021 FITNESS GOALS WITH US!</h1>
+    </div>
+    <div class="join">
+        <a href="/form.html">JOIN NOW</a>
+    </div>
+    <!-- assuming noaction.php is already -->
+    <form action="noaction.php">
+        <div class="form">
+            <div class="formgroup">
+                NAME:
+                <br><input type="text" name="" id="" placeholder="YOUR NAME"></div>
+            <div class="formgroup">GENDER:
+                <br>
+                <input type="checkbox" name="" id="">male
+                <input type="checkbox" name="" id="">female
+                <input type="checkbox" name="" id="">other
+            </div>
+            <div class="formgroup">
+                PHONE NO.:
+                <br><input type="text" name="" id="" placeholder="YOUR PHONE NUMBER"></div>
+            <div class="formgroup">
+                AGE:
+                <br><input type="text" name="" id="" placeholder="YOUR AGE"></div>   
+            <button class="submit">SUBMIT</button>        
+    </form>
+</body>
+
+</html>
